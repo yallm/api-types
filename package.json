@@ -1,5 +1,5 @@
 {
-  "name": "api-types",
+  "name": "microtus-api-types",
   "version": "0.0.0",
   "description": "",
   "types": "index.d.ts"
