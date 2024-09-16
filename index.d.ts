@@ -3,4 +3,8 @@ declare module "microtus-api-types" {
     event: "prompt" | "message" | "error";
     data: any;
   }
+  
+  export interface fileInfo {
+    name: string;
+  }
 }
