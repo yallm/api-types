@@ -8,6 +8,7 @@ declare module "microtus-api-types" {
     event: "prompt";
     data: {
       query: string;
+      id: number;
       model: string;
       messages: { role: "user" | "assistant"; content: string };
     };
