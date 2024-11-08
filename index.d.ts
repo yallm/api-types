@@ -4,6 +4,15 @@ declare module "microtus-api-types" {
     data: any;
   }
 
+  export interface PromptPayload extends Payload {
+    event: "prompt";
+    data: {
+      query: string;
+      model: string;
+      messages: { role: "user" | "assistant"; content: string };
+    };
+  }
+
   export interface fileInfo {
     name: string;
     mimeType: string;
