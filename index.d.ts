@@ -10,7 +10,7 @@ declare module "microtus-api-types" {
       query: string;
       id: number;
       model: string;
-      messages: { role: "user" | "assistant"; content: string }[];
+      messages: string[];
     };
   }
 
