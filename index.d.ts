@@ -1,13 +1,13 @@
 declare module "microtus-api-types" {
   export interface Payload {
     event: "prompt" | "message" | "error" | "stop";
-    id: number;
+    id: string;
     data: any;
   }
 
   export interface PromptPayload extends Payload {
     event: "prompt";
-    id: number;
+    id: string;
     data: {
       query: string;
       model: string;
@@ -17,7 +17,7 @@ declare module "microtus-api-types" {
 
   export interface StopPayload extends Payload {
     event: "stop";
-    id: number;
+    id: string;
   }
 
   export interface fileInfo {
